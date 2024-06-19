@@ -1,0 +1,280 @@
+
+:root {
+  --principal: #fdfef0;
+  --secundario-1: #fbc040;
+  --secundario-2: #f07715;
+  --secundario-3: #92b7b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+}
+#atractivos_container {
+  margin:  10px; /* Add this to center the container */
+}
+
+#rutaMasCorta_container {
+  margin: 10px; /* Add this to move the container to the right */
+}
+
+body {
+  background-color: var(--principal);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: var(--secundario-2);
+  color: #fff;
+  padding: 20px;
+  height: 250px;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  position:sticky;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#auxMain_div{
+  padding: 10px;
+  width: 100%;
+  height: 15px;
+  background-color: var(--secundario-2);
+}
+header::before{
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+}
+
+header h1 {
+  font-family:Arial;
+  font-weight:bolder;
+  margin-left: 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 30px; /* Space for the fixed header */
+  margin-bottom: 30px;
+}
+
+#atractivos_container {
+  background-color: #fff;
+  border: 2px solid var(--secundario-3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  box-sizing: border-box;
+  margin:  10px;
+}
+
+#atractivos_container h1 {
+  color: var(--secundario-1);
+  font-size: 1.2em;
+  font-family:monospace;
+  text-align: center;
+}
+#rutaMasCorta_container h1 {
+  color: var(--secundario-2);
+  font-size: 1.2em;
+  font-family:Arial;
+  text-align: center;
+}
+
+#atractivos_container h2 {
+  color: var(--secundario-3);
+  font-size: 1em;
+  margin-top: 10px;
+}
+#rutaMasCorta_container h2 {
+  color: var(--secundario-3);
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+#rutaMasCorta_container{
+  background-color: #fff;
+  border: 2px solid var(--secundario-3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  box-sizing: border-box;
+   margin: 10px;
+}
+
+
+#newAtractivo_input,
+#atractivoA_input,
+#atractivoB_input,
+#distaciaEntreVertices_input, #newAtractivoCaracteristicas_input,#puntoA_input,#puntoB_input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid var(--secundario-3);
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+button {
+  background-color: var(--secundario-1);
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: var(--secundario-1);
+}
+
+footer {
+  background-color: var(--secundario-2);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.8em;
+}
+
+#piePagina {
+  background-color: var(--secundario-2);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: inline;
+  margin: 5px;
+}
+
+#maps {
+  height: 160px;
+  padding-left: 60px;
+  padding-top: 30px;
+  width: 300px;
+  padding: 15px;
+}
+
+
+#oficinas {
+  width: 300px;
+  color: white;
+  font-size: 10px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+#soluciones, #company {
+  width: 300px;
+  color: white;
+  font-size: 10px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+#redesSociales {
+  padding-right: 100px;
+  margin-top: 55%;
+  width: 200px;
+  height: 25px;
+}
+
+h4 {
+  color: var(--secundario-3);
+  width: 200px;
+}
+
+h3 {
+  padding: 5px;
+  color: var(--secundario-);
+}
+
+#lineaPiePagina {
+  padding-right: 100px;
+  padding-bottom: 40px;
+  background-color: var(--secundario-2);
+  text-align: right;
+  color: white;
+  width: 100%;
+}
+
+#marcaRegistrada {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  background-color: var(--secundario-2);
+  height: 10px;
+}
+button {
+  transition: background-color 0.4s ease;
+}
+
+button:hover {
+  background-color: var(--secundario-2);
+}
+
+input:hover{
+  background-color: #f2f2f2;
+}
+#logo {
+  transition: transform 0.5s ease;
+}
+
+#logo:hover {
+  transform: rotate(360deg);
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.eslogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--secundario-2);
+}
+.eslogan:hover{
+    transform: rotate3d();
+}

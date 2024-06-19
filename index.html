@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Operations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="src/controllers/scripts.mjs"></script>
+</head>
+<body>
+    <header id="encabezado">
+        <h1>Resort Agency</h1>
+    </header>
+    <div id="background-video">
+        <video autoplay muted loop>
+            <source src="./src/img/videoBackground.mp4" type="video/mp4">
+        </video>
+        <div class="eslogan">
+            <h1>Descubre el mundo a través de nuestras rutas escénicas.</h1>
+            <p>Embárcate en una aventura inolvidable. Desde majestuosas montañas hasta playas de arena blanca,
+            nuestras rutas turísticas te llevarán a lugares que te robarán el aliento. ¡Explora, disfruta y crea recuerdos invaluables!.</p>
+        </div>
+    </div>
+    <div id = "auxMain_div"></div>
+    <main>
+    <div id = "apartado1">
+        <div id="atractivos_container">
+            <img id = "logo" src="./src/img/OIP-removebg-preview (5).png" alt="">
+            <h2>Agregar atractivo</h2>
+            <input type="text" name="" id="newAtractivo_input" placeholder="Agrege nuevo atractivo">
+            <button  id="newAtractivo_button">Agregar</button>
+            <h2>Punto inicio</h2>
+            <input type="text" id="atractivoA_input" placeholder="Atractivo de inicio">
+            <h2>Punto final</h2>
+            <input type="text" id="atractivoB_input" placeholder="Atractivo de destino">
+            <h2>Distancia</h2>
+            <input type="text" id="distaciaEntreVertices_input" placeholder="Km">
+            <button id = "agregarAristaBtn" >Agregar</button>
+            <button id = "recorridoProfundidadBtn" >Mostrar Atractivos</button>
+        </div>
+    </div>
+        <div id="rutaMasCorta_container">
+            <h1>Buscar ruta mas corta</h1>
+            <br>
+            <h2>Punto inicio</h2>
+            <input type="text" id="puntoA_input" placeholder="Atractivo de inicio">
+            <button id = "buscarRutaMasCorta_Btn" >Buscar</button>
+        </div>
+    </main>
+    <footer id="piePagina">
+        <div><img id =  "maps" src="./src/img/maps.png" alt=""></div>
+        <div id = "oficinas">
+            <h2>Resort Agency</h2>
+            <h3>Oficinas</h3>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis maxime</h4>
+            <h3>NOC & Workshop</h3>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis maxime</h4>
+        </div>
+        <div id = "soluciones">
+            <h2>Solutions</h2>
+            <h3>Wifi Community</h3>
+            <h3>Breadband</h3>
+            <h3>Display Village</h3>
+            <h3>Discussion</h3>
+        </div>
+        <div id = "company">
+            <h2>Company</h2>
+            <h3>About Us</h3>
+            <h3>Contact</h3>
+            <h3>Address</h3>
+            <h3>News</h3>
+        </div>
+        <div> <img id = "redesSociales" src="./src/img/redes.png" alt=""></div>
+    </footer>
+    <div id = "lineaPiePagina">__________________________________________________________________</div>
+    <div id = "marcaRegistrada">&copy; 2024 Universidad Politecnica de Chiapas</div>
+</body>
+</html>
