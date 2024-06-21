@@ -91,36 +91,3 @@
     const limpiarInput = (inputElement) => {
         inputElement.value = '';
     };
-
-    const graph = new Grafo();
-    graph.addV("V1");
-    graph.addV("V2");
-    graph.addV("V3");
-    graph.addV("V4");
-    graph.addV("V5");
-    graph.addV("V6");
-
-    graph.addConexion('V1', 'V2', 2);
-    graph.addConexion('V1', 'V6', 3);
-    graph.addConexion('V2', 'V3', 1);
-    graph.addConexion('V2', 'V6', 5);
-    graph.addConexion('V3', 'V4', 8);
-    graph.addConexion('V3', 'V5', 3);
-    graph.addConexion('V3', 'V6', 5);
-    graph.addConexion('V4', 'V5', 11);
-    graph.addConexion('V5', 'V6', 6);
-    // Imprimir matriz
-    graph.printMatrizAristas();
-    // Corremos algoritmo pai
-    graph.dijkstra('V1', (distances) => {
-        console.log("Caminos más cortos desde V1:");
-        let mensaje = "Caminos mas cortos desde V1\n" 
-        for (let vertex in distances) {
-          mensaje += `${vertex}: ${distances[vertex]} \n` 
-        }
-        console.log(mensaje)
-        swal(mensaje)
-      }); 
-
-      
-     
